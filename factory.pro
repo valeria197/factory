@@ -7,3 +7,9 @@ SOURCES += \
         main.cpp
 
 DESTDIR = $PWD/../out
+
+HEADERS += \
+    classunit.h \
+    methodunit.h \
+    printoperatorunit.h \
+    unit.h
