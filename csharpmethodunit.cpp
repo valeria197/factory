@@ -17,17 +17,14 @@ std::string CsharpMethodUnit::compile(unsigned int level) const
     {
         result += "static ";
     }
-
-    if( m_flags & MethodUnit::Modifier::VIRTUAL)
+    else if( m_flags & MethodUnit::Modifier::VIRTUAL)
     {
         result += "virtual ";
     }
-
-    if(m_flags & MethodUnit::Modifier::ABSTRACT)
+    else if(m_flags & MethodUnit::Modifier::ABSTRACT)
     {
         result += "abstract ";
     }
-
 
     result += m_returnType + " ";
     result += m_name + "()";

@@ -17,20 +17,14 @@ std::string JavaMethodUnit::compile(unsigned int level) const
     {
         result += "static ";
     }
+    else if(m_flags & MethodUnit::Modifier::ABSTRACT)
+    {
+        result += "abstract ";
+    }
 
     if (m_flags & MethodUnit::Modifier::FINAL)
     {
         result += "final ";
-    }
-
-    if(m_flags & MethodUnit::Modifier::SYNCHRONIZED)
-    {
-        result += "synchronized ";
-    }
-
-    if(m_flags & MethodUnit::Modifier::ABSTRACT)
-    {
-        result += "abstract ";
     }
 
     result += m_returnType + " ";

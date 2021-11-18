@@ -12,8 +12,7 @@ public:
         STATIC= 2,
         VIRTUAL= 4,
         FINAL= 8,
-        ABSTRACT= 16,
-        SYNCHRONIZED= 32
+        ABSTRACT= 16
     };
 public:
      MethodUnit(const std::string& name, const std::string& returnType, Flags flags):
