@@ -13,7 +13,7 @@ SOURCES += \
         javamethodunit.cpp \
         main.cpp
 
-DESTDIR = $PWD/../out
+DESTDIR = $$PWD/../out
 
 HEADERS += \
     abstractfactory.h \
